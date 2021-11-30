@@ -1,6 +1,9 @@
 build:
   docker:
     worker: Dockerfile
+    command:
+      pip install virtualenv --user
+      pip install -r requirements.txt --user
 run:
   worker:
     command:
